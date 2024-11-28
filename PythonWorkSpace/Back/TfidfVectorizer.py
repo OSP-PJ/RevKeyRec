@@ -2,7 +2,7 @@ import json
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # JSON 파일에서 utf8 형식으로 데이터 불러오기
-with open("C:/RevKeyRec/RevKeyRec/PythonWorkSpace/Back/osp-revkeyrec-default-rtdb-export.json", 'r+', encoding='utf-8') as f:
+with open("로컬에 저장되어 있는 json 경로", 'r+', encoding='utf-8') as f:
     data = json.load(f)
 # texts = [product['name'] for product in data.values()] 
     texts = [product['name'] for product in data['products'] if product and 'name' in product]
