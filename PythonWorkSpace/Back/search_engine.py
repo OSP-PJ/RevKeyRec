@@ -20,7 +20,7 @@ def search_similar_products(search_product, embeddings):
             }) #원래 인덱스, 즉 코사인 유도로 찾은 유사도가 가장 높은 값의 데이터들의 제품명, 유사도를 반환
     return similar_products #상위 5개에 대한 내용 리턴
 
-path = "C:/Users/User/Desktop/오픈소스/PythonWorkSpace/Back/osp-revkeyrec-default-rtdb-export.json" #json 파일이 저장되어 있는 경로
+path = "NONE" #json 파일이 저장되어 있는 경로
 
 with open(path, 'r+', encoding='utf-8') as f:
     data = json.load(f)

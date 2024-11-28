@@ -3,8 +3,8 @@ import json
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
-
-with open("C:/Users/User/Desktop/osp-revkeyrec-default-rtdb-export.json", 'r+', encoding='utf-8') as f:
+path = "NONE" #json 파일이 저장되어 있는 경로
+with open(path, 'r+', encoding='utf-8') as f:
     data = json.load(f)
     texts = [product['name'] for product in data if product and 'name' in product]
 #지능형 리스트 사용
